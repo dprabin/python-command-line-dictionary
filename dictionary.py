@@ -15,9 +15,9 @@ def meaning(w):
         if yn == 'y':
             return data[get_close_matches(w,data.keys())[0]]
         elif yn =='n':
-            return "You should have entered either y or n"
+            return "The word doesn't exist in our dictionary"
         else:
-            return "The word doesnt exist."
+            return "You should have entered either y or n."
     else:
         return "The word doesn't exist."
 
