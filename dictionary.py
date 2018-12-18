@@ -4,6 +4,8 @@ This contains all the code required to read word meanings from data file to matc
 import json
 from  difflib import sequenceMatcher
 sequenceMatcher(None,"pototo","potato") #returns the similarity index between two words
+from difflib import get_close_matches
+get_close_matches("pototo") #use sequenceMatcher to ets most similar word out of the keys in dictionary
 
 data = json.load(open("data.json"))
 
