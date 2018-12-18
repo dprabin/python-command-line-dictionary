@@ -22,4 +22,6 @@ def meaning(w):
         return "The word doesn't exist."
 
 word = input("Enter the Word: ")
-print(meaning(word))
+output = meaning(word)
+for item in output:
+    print (item)
