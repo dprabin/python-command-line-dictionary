@@ -2,6 +2,8 @@
 This contains all the code required to read word meanings from data file to match the user input.
 '''
 import json
+from  difflib import sequenceMatcher
+sequenceMatcher(None,"pototo","potato") #returns the similarity index between two words
 
 data = json.load(open("data.json"))
 
