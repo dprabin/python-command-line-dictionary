@@ -23,5 +23,9 @@ def meaning(w):
 
 word = input("Enter the Word: ")
 output = meaning(word)
-for item in output:
-    print (item)
+
+if type(output)==list:
+    for item in output:
+        print (item)
+else:
+    print(output)
